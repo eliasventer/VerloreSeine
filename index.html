@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A fictional abandoned research archive belonging to Dr Elias Venter." />
+  <title>Archive Node 17 — Elias Venter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">ACADEMIA // DIGITAL OVERSIGHT DIRECTORATE</p>
+      <h1 class="glitch" data-text="ARCHIVE NODE 17">ARCHIVE NODE 17</h1>
+    </div>
+    <div class="status-card" aria-label="Archive status">
+      <span class="status-dot"></span>
+      <span>STATUS: COMPROMISED</span>
+    </div>
+  </header>
+
+  <nav class="top-nav" aria-label="Archive sections">
+    <a href="#subject">SUBJECT FILE</a>
+    <a href="#documents">RECOVERED DOCUMENT</a>
+    <a href="#logs">SYSTEM LOG</a>
+    <a href="#media">RECOVERED MEDIA</a>
+  </nav>
+
+  <main>
+    <section class="hero panel" id="subject">
+      <div class="hero-copy">
+        <p class="classification">CLASSIFICATION: ███████ / LEVEL 7</p>
+        <h2>DR. ELIAS VENTER</h2>
+        <p class="subtitle">Cybersecurity researcher. Surveillance analyst. Missing person.</p>
+        <p>
+          This archive was recovered from a decommissioned research server after the disappearance
+          of Dr Elias Venter. Most files are damaged, partially overwritten, or deliberately redacted.
+        </p>
+        <div class="meta-grid">
+          <div><span>FILE ID</span><strong>EV-0413-X</strong></div>
+          <div><span>LAST SYNC</span><strong>13 APR 2026 / 02:17</strong></div>
+          <div><span>LOCATION</span><strong>UNKNOWN</strong></div>
+          <div><span>ACCESS TRACE</span><strong>ACTIVE</strong></div>
+        </div>
+      </div>
+
+      <aside class="portrait-placeholder" aria-label="Redacted profile image">
+        <div class="portrait-noise"></div>
+        <span>IMAGE CORRUPTED</span>
+        <small>FRAME_07 / CHECKSUM FAILED</small>
+      </aside>
+    </section>
+
+    <section class="two-column" id="documents">
+      <article class="panel document">
+        <div class="document-header">
+          <span>RECOVERED MEMORANDUM</span>
+          <span>PAGE 03 OF 11</span>
+        </div>
+        <h3>PROJECT: VERLORE SEINE</h3>
+        <p>
+          The network was never built to protect the public. It was built to observe patterns,
+          predict resistance, and erase uncertainty before it becomes action.
+        </p>
+        <p>
+          The public record contains only the version they permit you to remember. The original
+          sequence remains elsewhere — stored between deletion and discovery.
+        </p>
+        <p class="redacted-line"><span>REDACTED</span></p>
+        <p>
+          If this page is still online, the transfer failed. Do not search for me. Search for the
+          missing interval.
+        </p>
+        <div class="signature">— E. Venter</div>
+      </article>
+
+      <aside class="panel warning-panel">
+        <h3>SECURITY NOTICE</h3>
+        <p>Your session has been flagged by an unidentified monitoring process.</p>
+        <ul>
+          <li>Do not refresh this page repeatedly.</li>
+          <li>Do not trust the newest version of a file.</li>
+          <li>Archives remember what networks delete.</li>
+        </ul>
+        <button id="decryptButton" type="button">ATTEMPT DECRYPTION</button>
+        <div id="decryptionResult" class="decryption-result" aria-live="polite"></div>
+      </aside>
+    </section>
+
+    <section class="panel terminal" id="logs" aria-label="Recovered system log">
+      <div class="terminal-bar">
+        <span></span><span></span><span></span>
+        <p>root@node17:/archive/venter/logs</p>
+      </div>
+      <pre id="terminalText"><code>[02:16:43] AUTH TOKEN ACCEPTED
+[02:16:58] EXTERNAL MIRROR DETECTED
+[02:17:04] FILE EV-0413-X ACCESSED
+[02:17:09] CAMERA FEED INTERRUPTED
+[02:17:11] MESSAGE FRAGMENT RECOVERED:
+            "RETURN TO THE FIRST SIGNAL."
+[02:17:13] ARCHIVE INDEX CORRUPTED
+[02:17:14] USER DISCONNECTED
+[02:17:14] TRACE CONTINUES...</code></pre>
+    </section>
+
+    <section class="panel media-panel" id="media">
+      <div>
+        <p class="eyebrow">EXTERNAL EVIDENCE CHANNEL</p>
+        <h2>VERLORE SEINE</h2>
+        <p>
+          One surviving media channel was repeatedly referenced inside Venter's encrypted notes.
+          The channel remains active, although its relationship to the archive is unknown.
+        </p>
+      </div>
+      <a
+        class="evidence-link"
+        href="https://www.youtube.com/@VerloreSeine"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        OPEN RECOVERED YOUTUBE CHANNEL
+        <span>youtube.com/@VerloreSeine ↗</span>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>ARCHIVE NODE 17 // CONNECTION UNVERIFIED // FICTIONAL INTERACTIVE STORY</p>
+    <p id="footerClock">LOCAL SESSION: --:--:--</p>
+  </footer>
+
+  <div class="trace-banner" id="traceBanner" role="status">
+    UNAUTHORISED ACCESS DETECTED — TRACE ROUTE: ███████████
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
