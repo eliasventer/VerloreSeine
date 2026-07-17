@@ -555,3 +555,142 @@ footer {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* Raaiselhek en verseëlde bewyslêer */
+.media-copy {
+  min-width: 0;
+}
+
+.riddle {
+  margin: 28px 0 0;
+  padding: 22px 24px;
+  border-left: 2px solid var(--cyan);
+  background: rgba(0, 0, 0, 0.24);
+  color: #d6f7f8;
+}
+
+.riddle span {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--cyan);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+}
+
+.riddle p {
+  margin: 0;
+  color: #b9d6d8 !important;
+  line-height: 1.9 !important;
+}
+
+.vault {
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid rgba(255, 69, 93, 0.36);
+  background:
+    linear-gradient(145deg, rgba(38, 7, 13, 0.58), rgba(0, 7, 10, 0.7));
+}
+
+.riddle-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #ff9aa7;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+}
+
+.answer-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.answer-row input {
+  width: 100%;
+  min-width: 0;
+  padding: 14px 15px;
+  border: 1px solid rgba(82, 230, 233, 0.4);
+  outline: none;
+  background: rgba(0, 0, 0, 0.3);
+  color: #e8ffff;
+  font: inherit;
+  caret-color: var(--cyan);
+}
+
+.answer-row input::placeholder {
+  color: #52777a;
+}
+
+.answer-row input:focus {
+  border-color: var(--cyan);
+  box-shadow: 0 0 20px rgba(82, 230, 233, 0.1);
+}
+
+.answer-row button {
+  width: auto;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.riddle-feedback {
+  min-height: 34px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+}
+
+.riddle-feedback.incorrect {
+  color: #ff7f90;
+}
+
+.riddle-feedback.correct {
+  color: #7bffe6;
+}
+
+.riddle-form.unlocked {
+  opacity: 0.48;
+}
+
+.unlock-label {
+  margin: 0 0 12px;
+  color: #7bffe6;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+}
+
+.recovered-evidence {
+  margin-top: 22px;
+}
+
+.recovered-evidence[hidden] {
+  display: none;
+}
+
+.recovered-evidence.revealed {
+  animation: reveal-file 620ms ease both;
+}
+
+@keyframes reveal-file {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@media (max-width: 540px) {
+  .answer-row {
+    grid-template-columns: 1fr;
+  }
+
+  .answer-row button {
+    width: 100%;
+  }
+}
